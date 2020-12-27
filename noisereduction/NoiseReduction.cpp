@@ -814,7 +814,7 @@ bool NoiseReductionWorker::ProcessOne(Statistics &statistics, InputTrack& inputT
      */
     StartNewTrack();
 
-    const sf_count_t BUFFER_SIZE = 500000; // 2mb
+    const size_t BUFFER_SIZE = 500000; // 2mb
     FloatVector buffer(BUFFER_SIZE);
 
     bool bLoopSuccess = true;
